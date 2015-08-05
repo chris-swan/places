@@ -5,6 +5,10 @@
 <body>
     <h1>You added a new place!</h1>
     <p>{{ newplace.getDescription }} - {{ newplace.getDuration }} days</p>
+    <ul>
+      <li><img src="{{ newplace.getImage }}"></li>
+    </ul>
+
     <p><a href='/'>View your list of you places.</a></p>
 </body>
 </html>

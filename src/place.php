@@ -3,11 +3,13 @@ class Place
 {
     private $description;
     private $duration;
+    private $image;
 
-    function __construct($description, $duration)
+    function __construct($description, $duration, $image)
     {
         $this->description = $description;
         $this->duration = $duration;
+        $this->image = $image;
     }
 
     function setDescription($new_description)
@@ -28,6 +30,16 @@ class Place
     function getDuration()
     {
         return $this->duration;
+    }
+
+    function setImage()
+    {
+        $this->image = (string) $new_image;
+    }
+
+    function getImage()
+    {
+        return $this->image;
     }
 
     function save()

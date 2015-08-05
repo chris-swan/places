@@ -12,6 +12,7 @@
                   <li>{{ place.getDescription }} </li>
                   <ul>
                       <li>{{ place.getDuration }}</li>
+                      <li><img src="{{ place.getImage }}"></li>
                   </ul>
               {% endfor %}
           </ul>
@@ -22,6 +23,8 @@
           <input id='description' name='description' type='text'>
           <label for='duration'><br>Duration of trip (in days) </label>
           <input id='duration' name='duration' type='number'><br>
+          <label for='image'> Post image link here </label>
+          <input id='image' name='image' type='text'><br>
           <button type='submit'>Add place</button>
       </form>
       <form action='/delete_places' method='post'>
