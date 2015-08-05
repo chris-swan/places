@@ -2,10 +2,12 @@
 class Place
 {
     private $description;
+    private $duration;
 
-    function __construct($description)
+    function __construct($description, $duration)
     {
         $this->description = $description;
+        $this->duration = $duration;
     }
 
     function setDescription($new_description)
@@ -16,6 +18,16 @@ class Place
     function getDescription()
     {
         return $this->description;
+    }
+
+    function setDuration()
+    {
+        $this->duration = (string) $new_duration;
+    }
+
+    function getDuration()
+    {
+        return $this->duration;
     }
 
     function save()
@@ -33,5 +45,4 @@ class Place
         $_SESSION['list_of_places'] = array();
     }
 }
-
 ?>
