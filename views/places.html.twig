@@ -1,5 +1,6 @@
 <html>
 <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
     <title>Places you've been!</title>
 </head>
 <body>
@@ -21,8 +22,10 @@
       <form action='/places' method='post'>
           <label for='description'>Place Description </label>
           <input id='description' name='description' type='text'>
-          <label for='duration'><br>Duration of trip (in days) </label>
-          <input id='duration' name='duration' type='number'><br>
+          <br>
+          <label for='duration'>Duration of trip (in days) </label>
+          <input id='duration' name='duration' type='number'>
+          <br>
           <label for='image'> Post image link here </label>
           <input id='image' name='image' type='text'><br>
           <button type='submit'>Add place</button>
