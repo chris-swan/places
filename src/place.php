@@ -1,5 +1,5 @@
 <?php
-class Task
+class Place
 {
     private $description;
 
@@ -20,17 +20,17 @@ class Task
 
     function save()
     {
-        array_push($_SESSION['list_of_tasks'], $this);
+        array_push($_SESSION['list_of_places'], $this);
     }
 
     static function getAll()
     {
-        return $_SESSION['list_of_tasks'];
+        return $_SESSION['list_of_places'];
     }
 
     static function deleteAll()
     {
-        $_SESSION['list_of_tasks'] = array();
+        $_SESSION['list_of_places'] = array();
     }
 }
 
